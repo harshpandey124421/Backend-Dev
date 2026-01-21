@@ -1,0 +1,3 @@
+Hello World
+This is a write stream example.
+Stream ended.
