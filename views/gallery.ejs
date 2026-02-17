@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Photo Gallery</h2>
+    <div style="display: flex; gap: 10px;">
+        <% if (images.length === 0) { %>
+            <p>No images found. Please add images to public/images folder.</p>
+        <% } %>
+        
+        <% images.forEach(image => { %>
+            <div>
+                <img src="/images/<%= image %>" width="200" style="border: 1px solid #ccc;">
+            </div>
+        <% }) %>
+    </div>
+</body>
+</html>
